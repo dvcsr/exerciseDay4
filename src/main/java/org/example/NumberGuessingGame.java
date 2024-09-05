@@ -49,11 +49,13 @@ public class NumberGuessingGame {
             if (snumGuess.charAt(0) != abort) {
                 System.out.println("do you want to play again? (y/n)");
                 replay = myScan.nextLine().charAt(0);
+
             }
+            else break;
 
 
         }
-        while (replay == 'y' && abort != 'x');
+        while (replay == 'y');
 
         System.out.println("Thank you for playing!");
     }
