@@ -53,7 +53,7 @@ public class NumberGuessingGame {
 
 
         }
-        while (replay == 'y');
+        while (replay == 'y' && abort != 'x');
 
         System.out.println("Thank you for playing!");
     }
