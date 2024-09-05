@@ -6,12 +6,13 @@ public class NumberGuessingGame {
 
         char replay = 'y';
         char abort = 'x';
-
         int numOfAttempt = 0;
+
         do {
             int myNum = (int)(Math.random() * 10);
 
             Scanner myScan = new Scanner(System.in);
+            numOfAttempt = 0;
             System.out.println("I have a number in my head.");
             System.out.println("Guess:");
             String snumGuess = myScan.nextLine();
